@@ -20,7 +20,7 @@ export function Button({ title, variant, ...rest }: ButtonProps) {
       }}
 
       _loading={{
-        _spinner: {color: 'black'}
+        _spinner: {color: variant === 'secondary' ? 'white' : 'black'}
       }}
       {...rest}
     >
